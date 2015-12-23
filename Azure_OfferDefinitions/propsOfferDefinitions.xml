@@ -1,0 +1,5 @@
+EndPoint=http://nimbusqi.azure-api.net
+OfferDefsPathAndFile=D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_OfferDefinitions\\OfferDefinitionsReqResp.xls
+AdminOfferDefsPathAndFile=D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_OfferDefinitions\\AdminOfferDefinitionsReqResp.xls
+cookie=swyConsumerDirectoryPro=AQIC5wM2LY4SfcwDWJNjGwS-v8d-nsOCzhvLY2jrD9O27Bw.*AAJTSQACMDMAAlMxAAIwMQ..*
+AdminCookie=sswyConsumerDirectoryPro=AQIC5wM2LY4SfcwDWJNjGwS-v8d-nsOCzhvLY2jrD9O27Bw.*AAJTSQACMDMAAlMxAAIwMQ..*;SWY_RUNTIME_ONLY=true

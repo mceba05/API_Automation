@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1076d78e-1b75-4f5d-ab17-bb3957ef8520" activeEnvironment="Default" name="Azure_CategoryListRetrieval" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="e6a5dd05-f6c9-454a-a735-08d0e9e500ab" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://nimbusqi.azure-api.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint></con:endpoints><con:resource name="Categories" path="/J4UProgram1/services/offer/categories" id="c01d396e-32ef-4208-9aad-3b43e1e54ab0"><con:settings/><con:parameters><con:parameter><con:name>superoffer</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="Categories" id="5502e312-7649-48d7-bf2f-286da875e385" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:cat="http://nimbusqi.azure-api.net/J4UProgram1/services/offer/categories">cat:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="http://nimbusqi.azure-api.net/J4UProgram1/services/offer/categories">cat:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>407</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="CategoryList" id="f72a7d5c-039d-4493-90c5-366a5f964f5d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="swyConsumerDirectoryPro=AQIC5wM2LY4SfcwYbp5P57OMZQ3ezlF4qUZ-d9RQCAc4eF0.*AAJTSQACMDMAAlMxAAIwMg..*" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/offer/categories</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="superoffer" value="y"/>
+  <con:entry key="supperoffer" value="n"/>
+  <con:entry key="supperoffer=${Property - Looper#SupperOffer}" value="${Property - Looper#SupperOffer}"/>
+</con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ac0f37ce-017b-4bcd-a7fc-b1b14427bb9a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://nimbusqi.azure-api.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint></con:endpoints><con:resource name="Categories" path="/J4UProgram1/services/internal/offer/categories" id="c2e1895d-f699-47d3-9d90-697d26a28d81"><con:settings/><con:parameters><con:parameter><con:name>superoffer</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="AdminCategories" id="b261852d-aa31-40e8-9744-09d2d43823c6" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="http://nimbusqi.azure-api.net/J4UProgram1/services/internal/offer/categories">cat:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>407</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:cat="http://nimbusqi.azure-api.net/J4UProgram1/services/internal/offer/categories">cat:Fault</con:element></con:representation><con:request name="AdminCategoryList" id="71cb26e7-d9d9-4d97-9d26-459242c2eba5" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="swyConsumerDirectoryPro=AQIC5wM2LY4SfcwT_x3cGe68d2DJRulLcBiYsmp8tzSl_MU.*AAJTSQACMDMAAlMxAAIwMg..*;SWY_RUNTIME_ONLY=true" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/internal/offer/categories</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="superoffer" value="y" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>superoffer</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="cafaaa84-6cfc-46d2-9f3d-c373bac3a1fa" name="CategoryList"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="dd962b6a-767f-44cf-b3d0-4e6747e91cad" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Category List" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="data driver" id="099fca6f-f81b-4a62-a7d7-49ffd316014d"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import jxl.* 
+import jxl.write.*
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+def PathAndFile = context.expand('${#Project#CategoryListPathAndFile}') //Obtaining Global variable
+Workbook workbook1 = Workbook.getWorkbook(new File("$PathAndFile")) //file containing the data
+Sheet sheet1 = workbook1.getSheet(0) //saving rowIndex sheet in sheet1 
+size = sheet1.getRows().toInteger() //obtaining number of rows, each one is a data set 
+propTestStep = myTestCase.getTestStepByName("Property - Looper") //obtaining Property TestStep object 
+propTestStep.setPropertyValue("Total", size.toString()) 
+counter = propTestStep.getPropertyValue("Count").toString() //This variable contains iteration number 
+counter = counter.toInteger()  
+next = (counter > size-2? 0: counter+1) //setting next value 
+// Obtaining request and response from file
+Cell cokie = sheet1.getCell(0,counter) // getCell(column,row)  
+Cell resp = sheet1.getCell(1,counter) // getCell(column,row)  
+Cell superoffr = sheet1.getCell(2,counter)
+workbook1.close() //closing the file 
+Cookie = cokie.getContents() //obtaining Cookie from Excel file
+response = resp.getContents() //obtaining response from Excel file
+SuperOffer = superoffr.getContents() //obtaining SuperOffer from Excel file
+log.info ("Cookie from file: $Cookie" )
+log.info ("resp from file: $response" )
+log.info ("SuperOffer from file: $SuperOffer" )
+propTestStep.setPropertyValue("Cookie", Cookie) //cookie is saved in the property 
+propTestStep.setPropertyValue("ResponseExcel", response)//response is saved in the property 
+propTestStep.setPropertyValue("SuperOffer", SuperOffer)//SuperOffer is saved in the property 
+testRunner.testCase.testSuite.setPropertyValue("JSONresp","$response")//Setting response from file in global var
+propTestStep.setPropertyValue("Count", next.toString()) //increase Count value in the property 
+next++ //increase next value 
+propTestStep.setPropertyValue("Next", next.toString()) //set Next value on the properties step
+//Decide if the test has to run again
+if (counter == size-1)
+{	propTestStep.setPropertyValue("StopLoop", "T")
+	log.info "Setting the stoploop property now..."
+}
+else if (counter==0) 
+{def runner = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner(testRunner.testCase, null) 
+propTestStep.setPropertyValue("StopLoop", "F") 
+}else{
+propTestStep.setPropertyValue("StopLoop", "F")
+}
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Categories" id="93124a72-d460-436f-90ec-1139c04834c0"><con:settings/><con:config service="http://nimbusqi.azure-api.net" resourcePath="/J4UProgram1/services/offer/categories" methodName="Categories" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Categories" id="f72a7d5c-039d-4493-90c5-366a5f964f5d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="${Property - Looper#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/offer/categories</con:originalUri><con:assertion type="GroovyScriptAssertion" id="5dfcf17f-dae6-4436-bbd4-e6197808bc26" name="Script Assertion"><con:configuration><scriptText>//obtaining response from service
+def request = context.testCase.getTestStepByName("Categories")
+def response = request.getProperty("response").getValue()
+log.info("REST response: $response" )
+//obtaining response from file
+def responseFromFile = context.testCase.testSuite.properties["JSONresp"].value
+log.info("file response: $responseFromFile" )
+//storing comparison in a boolean variable to assert it
+boolean equalResponses = response.equals( responseFromFile )
+log.info("Equal Responses is: $equalResponses")
+assert equalResponses</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="superoffer" value="${Property - Looper#SuperOffer}"/>
+  <con:entry key="supperoffer" value="${Property - Looper#SupperOffer}"/>
+</con:parameters><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Property - Looper" id="eb606f14-1941-4f23-9dfd-80e8b07ef985"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Total</con:name><con:value>2</con:value></con:property><con:property><con:name>Count</con:name><con:value>0</con:value></con:property><con:property><con:name>Next</con:name><con:value>1</con:value></con:property><con:property><con:name>StopLoop</con:name><con:value>T</con:value></con:property><con:property><con:name>ResponseExcel</con:name><con:value><![CDATA[{"categories":{"1":"Baby Care","2":"Beverages","3":"Bread & Bakery","4":"Breakfast & Cereal","5":"Canned Goods & Soups","6":"Condiments, Spices & Bake","7":"Cookies, Snacks & Candy","8":"Dairy, Eggs & Cheese","9":"Deli","10":"Flowers & Decor","11":"Frozen Foods","12":"Fruits & Vegetables","13":"Grains, Pasta & Sides","14":"International Cuisine","15":"Meat & Seafood","16":"Paper, Cleaning & Home","17":"Personal Care & Health","18":"Pet Care","23":"Special Offers","19":"Wine, Beer & Spirits"}}]]></con:value></con:property><con:property><con:name>Cookie</con:name><con:value>swyConsumerDirectoryPro=AQIC5wM2LY4Sfczw9DnHGIpBvQKNVi7C5SuL4DIfZejBLF4.*AAJTSQACMDMAAlMxAAIwMg..*</con:value></con:property><con:property><con:name>SuperOffer</con:name><con:value>y</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Loop" id="203ff78e-f6d3-4741-84df-16dcc8be8b90"><con:settings/><con:config><script>def myTestCase = context.testCase 
+def runner
+//obtaining the Property TestStep
+propTestStep = myTestCase.getTestStepByName("Property - Looper")
+endLoop = propTestStep.getPropertyValue("StopLoop").toString()
+if (endLoop.toString() == "T" || endLoop.toString()=="True" || endLoop.toString()=="true")
+{
+log.info ("Exit Groovy Data Source Looper")
+assert true
+}
+else
+{//setStartStep
+testRunner.gotoStepByName("data driver")
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2f423230-993e-4ef3-855a-38fb9b3984f9" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AdminCategoryList" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="data driver" id="6b63c4ee-2a2f-4233-a098-b313b7603e93"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import jxl.* 
+import jxl.write.*
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+def PathAndFile = context.expand('${#Project#AdminCategoryListPathAndFile}') //Obtaining Global variable
+Workbook workbook1 = Workbook.getWorkbook(new File("$PathAndFile")) //file containing the data
+Sheet sheet1 = workbook1.getSheet(0) //saving rowIndex sheet in sheet1 
+size = sheet1.getRows().toInteger() //obtaining number of rows, each one is a data set 
+propTestStep = myTestCase.getTestStepByName("Property - Looper") //obtaining Property TestStep object 
+propTestStep.setPropertyValue("Total", size.toString()) 
+counter = propTestStep.getPropertyValue("Count").toString() //This variable contains iteration number 
+counter = counter.toInteger()  
+next = (counter > size-2? 0: counter+1) //setting next value 
+// Obtaining request and response from file
+Cell cokie = sheet1.getCell(0,counter) // getCell(column,row)  
+Cell resp = sheet1.getCell(1,counter) // getCell(column,row)  
+Cell superoffr = sheet1.getCell(2,counter)
+workbook1.close() //closing the file 
+Cookie = cokie.getContents() //obtaining StoreId from Excel file
+response = resp.getContents() //obtaining response from Excel file
+SuperOffer = superoffr.getContents() //obtaining SuperOffer from Excel file
+log.info ("Cookie from file: $Cookie" )
+log.info ("resp from file: $response" )
+log.info ("SuperOffer from file: $SuperOffer" )
+propTestStep.setPropertyValue("Cookie", Cookie) //cookie is saved in the property 
+propTestStep.setPropertyValue("ResponseExcel", response)//response is saved in the property 
+propTestStep.setPropertyValue("SuperOffer", SuperOffer)//SuperOffer is saved in the property 
+testRunner.testCase.testSuite.setPropertyValue("JSONresp","$response")//Setting response from file in global var
+propTestStep.setPropertyValue("Count", next.toString()) //increase Count value in the property 
+next++ //increase next value 
+propTestStep.setPropertyValue("Next", next.toString()) //set Next value on the properties step
+//Decide if the test has to run again
+if (counter == size-1)
+{	propTestStep.setPropertyValue("StopLoop", "T")
+	log.info "Setting the stoploop property now..."
+}
+else if (counter==0) 
+{def runner = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner(testRunner.testCase, null) 
+propTestStep.setPropertyValue("StopLoop", "F") 
+}else{
+propTestStep.setPropertyValue("StopLoop", "F")
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="AdminCategories" id="e3c9e298-fc0a-479e-b297-26fd2d954c0c"><con:settings/><con:config service="http://nimbusqi.azure-api.net" resourcePath="/J4UProgram1/services/internal/offer/categories" methodName="AdminCategories" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AdminCategories" id="71cb26e7-d9d9-4d97-9d26-459242c2eba5" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="${Property - Looper#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/internal/offer/categories</con:originalUri><con:assertion type="GroovyScriptAssertion" id="16381f5d-b8dd-4fb4-bce2-070d906bbc93" name="Script Assertion"><con:configuration><scriptText>//obtaining response from service
+def request = context.testCase.getTestStepByName("AdminCategories")
+def response = request.getProperty("response").getValue()
+log.info("REST response: $response" )
+//obtaining response from file
+def responseFromFile = context.testCase.testSuite.properties["JSONresp"].value
+log.info("file response: $responseFromFile" )
+//storing comparison in a boolean variable to assert it
+boolean equalResponses = response.equals( responseFromFile )
+log.info("Equal Responses is: $equalResponses")
+assert equalResponses</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="superoffer" value="${Property - Looper#SuperOffer}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Property - Looper" id="139e2070-fd7d-4811-85cf-1f0bbc831599"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Total</con:name><con:value>2</con:value></con:property><con:property><con:name>Count</con:name><con:value>0</con:value></con:property><con:property><con:name>Next</con:name><con:value>1</con:value></con:property><con:property><con:name>StopLoop</con:name><con:value>T</con:value></con:property><con:property><con:name>ResponseExcel</con:name><con:value><![CDATA[{"categories":{"1":"Baby Care","2":"Beverages","3":"Bread & Bakery","4":"Breakfast & Cereal","5":"Canned Goods & Soups","6":"Condiments, Spices & Bake","7":"Cookies, Snacks & Candy","8":"Dairy, Eggs & Cheese","9":"Deli","10":"Flowers & Decor","11":"Frozen Foods","12":"Fruits & Vegetables","13":"Grains, Pasta & Sides","14":"International Cuisine","15":"Meat & Seafood","16":"Paper, Cleaning & Home","17":"Personal Care & Health","18":"Pet Care","23":"Special Offers","19":"Wine, Beer & Spirits"}}]]></con:value></con:property><con:property><con:name>Cookie</con:name><con:value>swyConsumerDirectoryPro=AQIC5wM2LY4SfcwTyX5p956FMVXa3s8twNkMIRAbLrDEnSQ.*AAJTSQACMDMAAlMxAAIwMQ..*; SWY_RUNTIME_ONLY=true</con:value></con:property><con:property><con:name>SuperOffer</con:name><con:value>y</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Loop" id="b33d330f-f7fc-4ffc-b60d-1fe4eaef152f"><con:settings/><con:config><script>def myTestCase = context.testCase 
+def runner
+//obtaining the Property TestStep
+propTestStep = myTestCase.getTestStepByName("Property - Looper")
+endLoop = propTestStep.getPropertyValue("StopLoop").toString()
+if (endLoop.toString() == "T" || endLoop.toString()=="True" || endLoop.toString()=="true")
+{
+log.info ("Exit Groovy Data Source Looper")
+assert true
+}
+else
+{//setStartStep
+testRunner.gotoStepByName("data driver")
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>JSONresp</con:name><con:value><![CDATA[{"categories":{"1":"Baby Care","2":"Beverages","3":"Bread & Bakery","4":"Breakfast & Cereal","5":"Canned Goods & Soups","6":"Condiments, Spices & Bake","7":"Cookies, Snacks & Candy","8":"Dairy, Eggs & Cheese","9":"Deli","10":"Flowers & Decor","11":"Frozen Foods","12":"Fruits & Vegetables","13":"Grains, Pasta & Sides","14":"International Cuisine","15":"Meat & Seafood","16":"Paper, Cleaning & Home","17":"Personal Care & Health","18":"Pet Care","23":"Special Offers","19":"Wine, Beer & Spirits"}}]]></con:value></con:property></con:properties><con:setupScript>testSuite.properties["JSONresp"].value = 'JustToDefine'</con:setupScript></con:testSuite><con:properties><con:property><con:name>EndPoint</con:name><con:value>http://nimbusqi.azure-api.net</con:value></con:property><con:property><con:name>CategoryListPathAndFile</con:name><con:value>D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIautomation\\Azure_CategoryList\\CategoryListReqResp.xls</con:value></con:property><con:property><con:name>AdminCategoryListPathAndFile</con:name><con:value>D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIautomation\\Azure_CategoryList\\Admin_CategoryListReqResp.xls</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

@@ -1,0 +1,5 @@
+EndPoint=http://nimbusqi.azure-api.net
+PersonalizedContentPathAndFile=D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_PersonalizedContent\\PersonalizedContentReqResp.xls
+AdminPersonalizedContentPathAndFile=D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_PersonalizedContent\\AdminPersonalizedContentReqResp.xls
+cookie=swyConsumerDirectoryPro=AQIC5wM2LY4SfcwDWJNjGwS-v8d-nsOCzhvLY2jrD9O27Bw.*AAJTSQACMDMAAlMxAAIwMQ..*
+AdminCookie=swyConsumerDirectoryPro=AQIC5wM2LY4SfcwDWJNjGwS-v8d-nsOCzhvLY2jrD9O27Bw.*AAJTSQACMDMAAlMxAAIwMQ..*;SWY_RUNTIME_ONLY=true

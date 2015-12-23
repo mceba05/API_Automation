@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b03db926-d946-42e6-a0bb-10076c55dfea" activeEnvironment="Default" name="Azure_PersonalizedContent" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="7d8add5e-2e65-42b6-98a4-68a33a4cd703" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://nimbusqi.azure-api.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint></con:endpoints><con:resource name="Personalizedcontent" path="/J4UProgram1/services/personalizedcontent" id="9d097024-7f97-4c83-bbcc-8e50c3f834e9"><con:settings/><con:parameters/><con:method name="Personalizedcontent" id="d267197a-4691-4a30-9b89-8a20d4dfd4f4" method="GET"><con:settings/><con:parameters><con:parameter><con:name>storeId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/personalizedcontent">per:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/personalizedcontent">per:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/personalizedcontent">per:Fault</con:element></con:representation><con:request name="Request 1" id="540481c4-a42b-4126-b597-cc31428137c1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="${#Project#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/personalizedcontent</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="storeId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>storeId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4bac9063-3e07-4294-8176-2d3a63a90594" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://nimbusqi.azure-api.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint></con:endpoints><con:resource name="AdminPersonalizedcontent" path="/J4UProgram1/services/internal/personalizedcontent" id="564bf6b2-bfed-4714-aaca-c02b0ca0f1a6"><con:settings/><con:parameters><con:parameter><con:name>storeId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="AdminPersonalizedcontent" id="3a062c4e-6078-45ed-8dbe-4c4474ed145e" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/internal/personalizedcontent">per:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/internal/personalizedcontent">per:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:per="http://nimbusqi.azure-api.net/J4UProgram1/services/internal/personalizedcontent">per:Response</con:element></con:representation><con:request name="Request 1" id="ca08e5bf-c16e-497d-8279-9883c1429c68" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value="${#Project#AdminCookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/internal/personalizedcontent</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="storeId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>storeId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="59240636-4daf-4331-ba09-dae0777f0a96" name="PersonalizedContent"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="89b49e9a-8745-4395-8688-dd2c52c2b729" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PersonalizedContent_TC" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="data driver" id="784073bc-0809-4bfe-8779-292a553c2d43"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import jxl.* 
+import jxl.write.*
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+def PathAndFile = context.expand('${#Project#PersonalizedContentPathAndFile}') //Obtaining Global variable
+Workbook workbook1 = Workbook.getWorkbook(new File("$PathAndFile")) //file containing the data
+Sheet sheet1 = workbook1.getSheet(0) //saving rowIndex sheet in sheet1 
+size = sheet1.getRows().toInteger() //obtaining number of rows, each one is a data set 
+propTestStep = myTestCase.getTestStepByName("Property - Looper") //obtaining Property TestStep object 
+propTestStep.setPropertyValue("Total", size.toString()) 
+counter = propTestStep.getPropertyValue("Count").toString() //This variable contains iteration number 
+counter = counter.toInteger()  
+next = (counter > size-2? 0: counter+1) //setting next value 
+// Obtaining request and response from file
+Cell streId = sheet1.getCell(0,counter) // getCell(column,row)  
+Cell resp = sheet1.getCell(1,counter) // getCell(column,row)  
+workbook1.close() //closing the file 
+StoreId = streId.getContents() //obtaining StoreId from Excel file
+response = resp.getContents() //obtaining response from Excel file
+log.info ("storeId from file: $StoreId" )
+log.info ("resp from file: $response" )
+propTestStep.setPropertyValue("StoreId", StoreId) //StoreId is saved in the property 
+propTestStep.setPropertyValue("ResponseExcel", response)//response is saved in the property 
+testRunner.testCase.testSuite.setPropertyValue("JSONresp","$response")//Setting response from file in global var
+propTestStep.setPropertyValue("Count", next.toString()) //increase Count value in the property 
+next++ //increase next value 
+propTestStep.setPropertyValue("Next", next.toString()) //set Next value on the properties step
+//Decide if the test has to run again
+if (counter == size-1)
+{	propTestStep.setPropertyValue("StopLoop", "T")
+	log.info "Setting the stoploop property now..."
+}
+else if (counter==0) 
+{def runner = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner(testRunner.testCase, null) 
+propTestStep.setPropertyValue("StopLoop", "F") 
+}else{
+propTestStep.setPropertyValue("StopLoop", "F")
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="PersonalizedContent" id="732205ff-2132-432d-a58e-f86be3f321b4"><con:settings/><con:config service="http://nimbusqi.azure-api.net" resourcePath="/J4UProgram1/services/personalizedcontent" methodName="Personalizedcontent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PersonalizedContent" id="540481c4-a42b-4126-b597-cc31428137c1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="${#Project#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/personalizedcontent</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9c7d8f45-dd29-41ce-9246-2d68da182d2c" name="Script Assertion"><con:configuration><scriptText>//obtaining response from service
+def request = context.testCase.getTestStepByName("PersonalizedContent")
+def response = request.getProperty("response").getValue()
+log.info("REST response: $response" )
+//obtaining response from file
+def responseFromFile = context.testCase.testSuite.properties["JSONresp"].value
+log.info("file response: $responseFromFile" )
+//storing comparison in a boolean variable to assert it
+boolean equalResponses = response.equals( responseFromFile )
+log.info("Equal Responses is: $equalResponses")
+assert equalResponses</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="storeId" value="${Property - Looper#StoreId}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>storeId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Property - Looper" id="d20febf6-baf3-4f79-be34-eca37c4f6d95"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Total</con:name><con:value>2</con:value></con:property><con:property><con:name>Count</con:name><con:value>0</con:value></con:property><con:property><con:name>Next</con:name><con:value>1</con:value></con:property><con:property><con:name>StopLoop</con:name><con:value>T</con:value></con:property><con:property><con:name>ResponseExcel</con:name><con:value>{"errors":[{"code":"EMJO02030E","msg":"Invalid Store ID in Request parameter."}]}</con:value></con:property><con:property><con:name>StoreId</con:name><con:value>7</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Loop" id="00c13f5e-e9af-4b6b-bd7d-8acbd1e0c75c"><con:settings/><con:config><script>def myTestCase = context.testCase 
+def runner
+//obtaining the Property TestStep
+propTestStep = myTestCase.getTestStepByName("Property - Looper")
+endLoop = propTestStep.getPropertyValue("StopLoop").toString()
+if (endLoop.toString() == "T" || endLoop.toString()=="True" || endLoop.toString()=="true")
+{
+log.info ("Exit Groovy Data Source Looper")
+assert true
+}
+else
+{//setStartStep
+testRunner.gotoStepByName("data driver")
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="609320ee-49d4-499a-b86d-e6e960d4f039" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AdminPersonalizedContent_TC" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="data driver" id="9d1ad9f1-9bb7-413a-939d-a89b152c6ef5"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import jxl.* 
+import jxl.write.*
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+def cookie
+def PathAndFile = context.expand('${#Project#AdminPersonalizedContentPathAndFile}') //Obtaining Global variable
+Workbook workbook1 = Workbook.getWorkbook(new File("$PathAndFile")) //file containing the data
+Sheet sheet1 = workbook1.getSheet(0) //saving rowIndex sheet in sheet1 
+size = sheet1.getRows().toInteger() //obtaining number of rows, each one is a data set 
+log.info ("rows size: $size" )
+propTestStep = myTestCase.getTestStepByName("Property - Looper") //obtaining Property TestStep object 
+propTestStep.setPropertyValue("Total", size.toString()) 
+counter = propTestStep.getPropertyValue("Count").toString() //This variable contains iteration number 
+counter = counter.toInteger()  
+next = (counter > size-2? 0: counter+1) //setting next value 
+// Obtaining request and response from file
+Cell streId = sheet1.getCell(0,counter) // getCell(column,row)  
+Cell swyConsDirectPro = sheet1.getCell(1,counter)
+Cell swyruntimeonly = sheet1.getCell(2,counter)
+Cell swypreviewonly = sheet1.getCell(3,counter)
+Cell swyhouseholdid = sheet1.getCell(4,counter)
+Cell swycustomerguid = sheet1.getCell(5,counter)
+Cell swyclubcard = sheet1.getCell(6,counter)
+Cell resp = sheet1.getCell(7,counter) // getCell(column,row)  
+workbook1.close() //closing the file 
+storeId = streId.getContents() //obtaining storeId from Excel file
+swyConsumerDirectoyPro  = swyConsDirectPro.getContents() //obtaining swyConsumerDirectoyPro from Excel file
+swy_runtimeonly = swyruntimeonly.getContents() //obtaining swy_runtime_only from Excel file
+swy_previewonly = swypreviewonly.getContents() //obtaining swy_preview_only from Excel file
+swy_householdid = swyhouseholdid.getContents() //obtaining swy_household_id from Excel file
+swy_customerguid = swycustomerguid.getContents() //obtaining swy_customer_guid from Excel file
+swy_clubcard = swyclubcard.getContents() //obtaining swy_club_card from Excel file
+response = resp.getContents() //obtaining response from Excel file
+cookie = 'swyConsumerDirectoryPro='+swyConsumerDirectoyPro+';SWY_RUNTIME_ONLY='+swy_runtimeonly+
+';SWY_PREVIEW_ONLY='+swy_previewonly+';SWY_HOUSEHOLD_ID='+swy_householdid+
+';SWY_CUSTOMER_GUID='+swy_customerguid+';SWY_CLUB_CARD='+swy_clubcard
+log.info ("storeId from file: $storeId" )
+log.info ("swy_Consumer_Directoy_Pro: $swyConsumerDirectoyPro" )
+log.info ("swy_runtime_only from file: $swy_runtimeonly" )
+log.info ("swy_preview_only from file: $swy_previewonly" )
+log.info ("swy_household_id from file: $swy_householdid" )
+log.info ("swy_customer_guid from file: $swy_customerguid" )
+log.info ("swy_club_card from file: $swy_clubcard" )
+log.info ("resp from file: $response" )
+log.info ("cookie: $cookie" )
+propTestStep.setPropertyValue("storeId", storeId) //storeId is saved in the property 
+propTestStep.setPropertyValue("swyConsumerDirectoyPro", swyConsumerDirectoyPro) //swyConsDirectPro is saved in the property 
+propTestStep.setPropertyValue("swy_runtime_only", swy_runtimeonly) //swy_runtime_only is saved in the property 
+propTestStep.setPropertyValue("swy_preview_only", swy_previewonly) //swy_preview_only is saved in the property 
+propTestStep.setPropertyValue("swy_household_id", swy_householdid) //swy_household_id is saved in the property 
+propTestStep.setPropertyValue("swy_clubcard", swy_clubcard) //swy_club_card is saved in the property 
+propTestStep.setPropertyValue("swy_customer_guid", swy_customerguid) //swy_customer_guid is saved in the property 
+propTestStep.setPropertyValue("ResponseExcel", response)//response is saved in the property 
+propTestStep.setPropertyValue("Cookie", cookie)//cookie is saved in the property 
+testRunner.testCase.testSuite.setPropertyValue("JSONresp","$response")//Setting response from file in global var
+propTestStep.setPropertyValue("Count", next.toString()) //increase Count value in the property 
+next++ //increase next value 
+propTestStep.setPropertyValue("Next", next.toString()) //set Next value on the properties step
+//Decide if the test has to run again
+if (counter == size-1)
+{	propTestStep.setPropertyValue("StopLoop", "T")
+	log.info "Setting the stoploop property now..."
+}
+else if (counter==0) 
+{def runner = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner(testRunner.testCase, null) 
+propTestStep.setPropertyValue("StopLoop", "F") 
+}else{
+propTestStep.setPropertyValue("StopLoop", "F")
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="AdminPersonalizedContent" id="9a52396b-fcdb-4b10-8cc1-85039ec8dcae"><con:settings/><con:config service="http://nimbusqi.azure-api.net" resourcePath="/J4UProgram1/services/internal/personalizedcontent" methodName="AdminPersonalizedcontent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AdminPersonalizedContent" id="ca08e5bf-c16e-497d-8279-9883c1429c68" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="cookie" value="${Property - Looper#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://nimbusqi.azure-api.net</con:endpoint><con:request/><con:originalUri>http://nimbusqi.azure-api.net/J4UProgram1/services/internal/personalizedcontent</con:originalUri><con:assertion type="GroovyScriptAssertion" id="de89a4ec-85a7-4391-8dd9-82bdf82ca2d2" name="Script Assertion"><con:configuration><scriptText>//obtaining response from service
+def request = context.testCase.getTestStepByName("AdminPersonalizedContent")
+def response = request.getProperty("response").getValue()
+log.info("REST response: $response" )
+//obtaining response from file
+def responseFromFile = context.testCase.testSuite.properties["JSONresp"].value
+log.info("file response: $responseFromFile" )
+//storing comparison in a boolean variable to assert it
+boolean equalResponses = response.equals( responseFromFile )
+log.info("Equal Responses is: $equalResponses")
+assert equalResponses</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="storeId" value="${Property - Looper#StoreId}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>storeId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Property - Looper" id="c670d1a1-9c7d-4d8f-b9da-477b5e7ba048"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Total</con:name><con:value>2</con:value></con:property><con:property><con:name>Count</con:name><con:value>0</con:value></con:property><con:property><con:name>Next</con:name><con:value>1</con:value></con:property><con:property><con:name>StopLoop</con:name><con:value>T</con:value></con:property><con:property><con:name>ResponseExcel</con:name><con:value>{"errors":[{"code":"EMJO02030E","msg":"Invalid Store ID in Request parameter."}]}</con:value></con:property><con:property><con:name>storeId</con:name><con:value>70</con:value></con:property><con:property><con:name>swyConsumerDirectoyPro</con:name><con:value>AQIC5wM2LY4Sfcyc-7ylmRKENXvf5SchJesYF8mup3fUzjg.*AAJTSQACMDMAAlMxAAIwMg..*</con:value></con:property><con:property><con:name>swy_runtime_only</con:name><con:value>true</con:value></con:property><con:property><con:name>swy_preview_only</con:name><con:value>false</con:value></con:property><con:property><con:name>swy_household_id</con:name><con:value>250032303671</con:value></con:property><con:property><con:name>swy_clubcard</con:name><con:value>41022412565</con:value></con:property><con:property><con:name>swy_customer_guid</con:name><con:value>000-000-2000009226</con:value></con:property><con:property><con:name>Cookie</con:name><con:value>swyConsumerDirectoryPro=AQIC5wM2LY4Sfcyc-7ylmRKENXvf5SchJesYF8mup3fUzjg.*AAJTSQACMDMAAlMxAAIwMg..*;SWY_RUNTIME_ONLY=true;SWY_PREVIEW_ONLY=false;SWY_HOUSEHOLD_ID=250032303671;SWY_CUSTOMER_GUID=000-000-2000009226;SWY_CLUB_CARD=41022412565</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Loop" id="e4cb089c-cde6-4ff0-a236-ec6b1feae5f0"><con:settings/><con:config><script>def myTestCase = context.testCase 
+def runner
+//obtaining the Property TestStep
+propTestStep = myTestCase.getTestStepByName("Property - Looper")
+endLoop = propTestStep.getPropertyValue("StopLoop").toString()
+if (endLoop.toString() == "T" || endLoop.toString()=="True" || endLoop.toString()=="true")
+{
+log.info ("Exit Groovy Data Source Looper")
+assert true
+}
+else
+{//setStartStep
+testRunner.gotoStepByName("data driver")
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>JSONresp</con:name><con:value>{"errors":[{"code":"EMJO02030E","msg":"Invalid Store ID in Request parameter."}]}</con:value></con:property></con:properties><con:setupScript>testSuite.properties["JSONresp"].value = 'JustToDefine'</con:setupScript></con:testSuite><con:properties><con:property><con:name>EndPoint</con:name><con:value>http://nimbusqi.azure-api.net</con:value></con:property><con:property><con:name>PersonalizedContentPathAndFile</con:name><con:value>D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_PersonalizedContent\\PersonalizedContentReqResp.xls</con:value></con:property><con:property><con:name>AdminPersonalizedContentPathAndFile</con:name><con:value>D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_PersonalizedContent\\AdminPersonalizedContentReqResp.xls</con:value></con:property><con:property><con:name>cookie</con:name><con:value>swyConsumerDirectoryPro=AQIC5wM2LY4SfczvQH3EIipn_cVi34ONckaruw8z6SxPgO0.*AAJTSQACMDMAAlMxAAIwMg..*</con:value></con:property><con:property><con:name>AdminCookie</con:name><con:value>swyConsumerDirectoryPro=AQIC5wM2LY4Sfcxl4ffP56Cnybyvryp45WZHxk6uWha_rp0.*AAJTSQACMDMAAlMxAAIwMg..*;SWY_RUNTIME_ONLY=true;SWY_HOUSEHOLD_ID=250032303671;SWY_CLUB_CARD=41022412565;SWY_CUSTOMER_GUID=000-000-2000009226;SWY_PREVIEW_ONLY=false</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
