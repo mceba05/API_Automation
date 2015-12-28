@@ -1,0 +1,4 @@
+EndPoint=http://nimbusqi.azure-api.net
+PathAndFile=D:\\Users\\mceba05\\git\\EMJU_QA_Automation\\SOAP_API_Automation\\APIAutomation\\Azure_CoreServices\\Azure_CoreServicesReqResp.xls
+cookie=swyConsumerDirectoryPro=AQIC5wM2LY4SfczacmXXQTwrikbx1FFgGaeTbb5IChoAToY.*AAJTSQACMDMAAlMxAAIwMQ..*
+AdminCookie=swyConsumerDirectoryPro=AQIC5wM2LY4SfczacmXXQTwrikbx1FFgGaeTbb5IChoAToY.*AAJTSQACMDMAAlMxAAIwMQ..*;SWY_RUNTIME_ONLY=true
